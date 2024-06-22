@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обо мне</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="start">
+    <div>
+        <div class="header">
+            <a class="nav_link" href="index.html">
+            Плеер
+        </a>
+            <a class="nav_link" href="contacts.html">
+            Контакты
+        </a>
+            <br><br>
+            <a class="first_plane" href="about.html">
+            Об альбоме
+        </a>
+        </div>
+        <br><br>
+
+        <div class="player_location">
+            <h1>Опрос</h1>
+            <h3>Ваше мнение об альбоме?</h3>
+            <form id="myForm">
+                Name: <input id="userName" type="text" name="fname">
+                <br><br> Telegram @: <input id="userEmail" type="text" name="email">
+                <br><br>
+                <textarea id="userComment" rows="4" cols="50" name="comment"></textarea>
+                <br><br>
+                <input type="button" onclick="myFunction()" value="Submit">
+            </form>
+            <h1>Комментарии :</h1>
+            <p id="data"></p>
+            <script>
+                function myFunction() {
+                    let data = "";
+                    let name = document.getElementById("userName").value
+                    let email = document.getElementById("userEmail").value
+                    let comment = document.getElementById("userComment").value
+
+                    data = "Name : " + name + "<br/>Telegram @ : " + email + "<br/>User comment : " + comment
+
+                    document.getElementById("data").innerHTML = data // display data to paragraph
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
