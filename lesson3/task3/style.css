@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 1016px;
+    height: 40px;
+    top: -432px;
+    left: 2013px;
+    gap: 10px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.header {
+    width: 1289px;
+    height: 114px;
+    top: -458px;
+    left: 1954px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    justify-content: center;
+}
+
+.menu {
+    width: 556px;
+    height: 40px;
+    top: -432px;
+    left: 2487px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    align-items: center;
+}
+
+.top {
+    width: 1319px;
+    height: 928px;
+    top: -472px;
+    left: 1936px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.bungee-spice-regular {
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.top_info {
+    width: 589px;
+    height: 494px;
+    top: -308px;
+    left: 1970px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.top_buttons {
+    width: 374px;
+    height: 94px;
+    top: 54px;
+    left: 1990px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.info_plus_img {
+    width: 1274px;
+    height: 536px;
+    top: -323px;
+    left: 1954px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.top_logos {
+    width: 1240px;
+    height: 158px;
+    top: 266px;
+    left: 1970px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 25px;
+    justify-content: center;
+    margin-bottom: 128px;
+    margin-top: 300px;
+}
+
+.item {
+    border: 1px solid #000;
+    min-height: 200px;
+}
+
+.item1 {
+    grid-column: 2/4;
+    grid-row: 1/4;
+}
+
+.item5 {
+    grid-column: 1/4;
+}
+
+.box {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    position: relative;
+}
+
+.elem {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+}
+
+.elem1 {
+    background-color: hwb(160 50% 0%);
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+
+.elem2 {
+    background-color: #128710;
+    top: 75px;
+    left: 75px;
+    z-index: 2;
+}
+
+.elem3 {
+    background-color: #045821;
+    top: 150px;
+    left: 150px;
+    z-index: 1;
+}
