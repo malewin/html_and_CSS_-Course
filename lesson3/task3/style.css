@@ -29,6 +29,9 @@
     gap: 0px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menubar {
@@ -51,6 +54,9 @@
     gap: 0px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
+    display: flex;
+    gap: 35px;
+    align-items: center;
 }
 
 .ButMenu {
@@ -95,6 +101,10 @@
     gap: 0px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
 }
 
 .info_plus_img {
