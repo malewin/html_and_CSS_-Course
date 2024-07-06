@@ -3,13 +3,21 @@
     padding: 0;
 }
 
+.a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 580px);
+    padding-right: calc(50% - 580px);
+}
+
 .logo {
-    width: 1016px;
+    width: 137px;
     height: 40px;
     top: -432px;
     left: 2013px;
-    gap: 10px;
-    border: 1px 0px 0px 0px;
+    gap: 0px;
     opacity: 0px;
 }
 
@@ -21,7 +29,18 @@
     gap: 0px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
-    justify-content: center;
+}
+
+.menubar {
+    width: 1016px;
+    height: 40px;
+    top: -432px;
+    left: 2013px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu {
@@ -32,7 +51,19 @@
     gap: 0px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
-    align-items: center;
+}
+
+.ButMenu {
+    font-family: Gilroy-SemiBold;
+    font-size: 14px;
+    line-height: 16.41px;
+    text-align: left;
+    color: black;
+    gap: 32px;
+}
+
+.but1 {
+    color: chocolate;
 }
 
 .top {
@@ -45,12 +76,6 @@
     opacity: 0px;
 }
 
-.bungee-spice-regular {
-    font-family: "Bungee Spice", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 .top_info {
     width: 589px;
     height: 494px;
@@ -59,6 +84,7 @@
     gap: 0px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
+    align-items: center;
 }
 
 .top_buttons {
@@ -79,6 +105,7 @@
     gap: 0px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
+    display: flex;
 }
 
 .top_logos {
@@ -88,5 +115,40 @@
     left: 1970px;
     gap: 0px;
     border: 1px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.top_content {
+    width: 1274px;
+    height: 536px;
+    top: -323px;
+    left: 1954px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.title {
+    font-family: Gilroy-Bold;
+    font-size: 60px;
+    line-height: 70.31px;
+    text-align: left;
+    color: black;
+}
+
+.subtitle {
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    line-height: 23.44px;
+    text-align: left;
+    color: #888888;
+}
+
+.imgCont {
+    width: 610.73px;
+    height: 372.9px;
+    top: -308px;
+    left: 2572px;
+    gap: 0px;
     opacity: 0px;
 }
