@@ -1,0 +1,165 @@
+* {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    width: 100vw;
+    height: 2925px;
+}
+
+.header {
+    width: 100vw;
+    height: 75px;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top_info {
+    width: 100vw;
+    height: 764px;
+    background-color: #F1E4E6;
+    display: flex;
+    align-items: center;
+}
+
+.preview {
+    width: 1140px;
+    height: 470px;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: 260px 180px;
+    gap: 30px;
+}
+
+.shop {
+    width: 1140px;
+    height: 1395px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+
+.shop_choices {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(2, 587px);
+    gap: 30px;
+}
+
+.menubar1 {
+    width: 111px;
+    height: 38px;
+    display: flex;
+    gap: 41px;
+    align-items: flex-end;
+}
+
+.item_logo {
+    width: 44px;
+    height: 38px;
+}
+
+.item_lupa {
+    width: 26px;
+    height: 26.79px;
+}
+
+.menubar2 {
+    width: 159px;
+    height: 29px;
+    display: flex;
+    gap: 33px;
+    align-items: flex-end;
+}
+
+.item_menu {
+    width: 32px;
+    height: 23px;
+}
+
+.item_profile {
+    width: 29px;
+    height: 29px;
+}
+
+.item_basket {
+    width: 32px;
+    height: 29px;
+}
+
+.item_manBig {
+    width: 50vw;
+    height: 764px;
+}
+
+.item_brand {
+    width: 405px;
+    height: 93.1px;
+}
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+.item_heading {
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    color: #222222;
+}
+
+.item_text {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: #9F9F9F;
+}
+
+.item_heading2 {
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.6px;
+    text-align: left;
+    color: #000000;
+}
+
+.item_price {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: #F16D7F;
+}
+
+.item_ref {
+    width: 212px;
+    height: 48px;
+    border: 1px solid #FF6A6A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_text_button {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: #FF6A6A;
+    display: contents;
+}
