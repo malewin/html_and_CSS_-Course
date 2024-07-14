@@ -7,6 +7,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin: 0;
+}
+
 body {
     min-width: 1600px;
 }
@@ -43,6 +47,54 @@ body {
     position: relative;
 }
 
+.brand_block {
+    width: 425px;
+    height: 93.1px;
+    padding-top: 289.9px;
+    padding-left: 864px;
+    position: absolute;
+    display: flex;
+    gap: 16px;
+}
+
+.pink_square {
+    width: 12px;
+    height: 92px;
+    background: #F16D7F;
+}
+
+.brand_logo {
+    font-family: Lato;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 57.6px;
+    text-align: left;
+    color: #222222;
+}
+
+.bottom_line {
+    display: flex;
+    gap: 5px;
+}
+
+.brand_txt1 {
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+    color: #222222;
+}
+
+.brand_txt2 {
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+    color: rgb(241, 109, 127)
+}
+
 .preview {
     width: 1140px;
     height: 470px;
@@ -51,6 +103,64 @@ body {
     grid-template-rows: 260px 180px;
     gap: 30px;
     padding-top: 65px;
+}
+
+.preview_block {
+    position: relative;
+}
+
+.preview_txt1 {
+    position: absolute;
+    width: 174px;
+    height: 50px;
+    z-index: 1;
+    padding-top: 105px;
+    padding-left: 93px;
+}
+
+.preview_txt2 {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    z-index: 1;
+    padding-top: 105px;
+    padding-left: 120px;
+}
+
+.preview_txt3 {
+    position: absolute;
+    width: 125px;
+    height: 50px;
+    z-index: 1;
+    padding-top: 105px;
+    padding-left: 118px;
+}
+
+.preview_txt4 {
+    position: absolute;
+    width: 169.72px;
+    height: 50px;
+    z-index: 1;
+    padding-top: 65px;
+    padding-left: 486.14px;
+}
+
+.mini_txt {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.max_txt {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: center;
+    color: #F16D7F;
 }
 
 .shop {
@@ -177,6 +287,7 @@ body {
     line-height: 19.2px;
     text-align: left;
     color: #F16D7F;
+    margin-top: 16px;
 }
 
 .title_price {
