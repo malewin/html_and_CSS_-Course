@@ -343,9 +343,12 @@ body {
         padding-left: 16px;
     }
     .menubar2 {
+        display: contents;
+        align-items: normal;
+    }
+    .item_menu {
         padding-top: 25px;
         padding-left: 327px;
-        align-items: normal;
     }
     .item_profile {
         display: none;
@@ -377,13 +380,19 @@ body {
         gap: 32px;
         justify-items: center;
     }
+    .cat_proportion {
+        width: 343.26px;
+        height: 111px;
+        background-image: url(./img/4-ACCESORIES.svg);
+        background-size: cover;
+        background-position: center center;
+    }
     .item_img1 {
         width: 343px;
         height: 247px;
     }
     .item_img2 {
-        width: 343.26px;
-        height: 111px;
+        display: none;
     }
     .shop {
         width: 375px;
