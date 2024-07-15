@@ -64,7 +64,7 @@ body {
 }
 
 .brand_logo {
-    font-family: Lato;
+    font-family: "Lato", sans-serif;
     font-size: 48px;
     font-weight: 900;
     line-height: 57.6px;
@@ -72,13 +72,13 @@ body {
     color: #222222;
 }
 
-.bottom_line {
+-->.bottom_line {
     display: flex;
     gap: 5px;
 }
 
 .brand_txt1 {
-    font-family: Lato;
+    font-family: "Lato", sans-serif;
     font-size: 32px;
     font-weight: 700;
     line-height: 38.4px;
@@ -87,7 +87,7 @@ body {
 }
 
 .brand_txt2 {
-    font-family: Lato;
+    font-family: "Lato", sans-serif;
     font-size: 32px;
     font-weight: 700;
     line-height: 38.4px;
@@ -229,7 +229,7 @@ body {
 
 .item_brand {
     width: 405px;
-    height: 93.1px;
+    height: 92.1px;
     padding-top: 289.9px;
     padding-left: 864px;
     position: absolute;
@@ -364,12 +364,41 @@ body {
         width: 386px;
         height: 368px;
     }
-    .item_brand {
-        width: 311px;
+    .brand_block {
+        width: 311.92px;
         height: 92px;
-        position: absolute;
         padding-top: 138px;
         padding-left: 425px;
+        position: absolute;
+        display: flex;
+        gap: 16px;
+    }
+    .brand_poster {
+        width: 283px;
+        height: 78px;
+        top: 212.58px;
+        left: 453px;
+    }
+    .brand_logo {
+        font-family: "Lato", sans-serif;
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 52.8px;
+        text-align: left;
+    }
+    .brand_txt1 {
+        font-family: "Lato", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+        text-align: left;
+    }
+    .brand_txt2 {
+        font-family: "Lato", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+        text-align: left;
     }
     .preview {
         width: 736px;
@@ -381,6 +410,38 @@ body {
         padding-left: 16px;
         padding-right: 16px;
         padding-top: 64.95px;
+    }
+    .preview_txt1 {
+        position: absolute;
+        width: 174px;
+        height: 50px;
+        z-index: 1;
+        padding-top: 59px;
+        padding-left: 30.98px;
+    }
+    .preview_txt2 {
+        position: absolute;
+        width: 120px;
+        height: 50px;
+        z-index: 1;
+        padding-top: 57px;
+        padding-left: 57.97px;
+    }
+    .preview_txt3 {
+        position: absolute;
+        width: 125px;
+        height: 50px;
+        z-index: 1;
+        padding-top: 58px;
+        padding-left: 53.97px;
+    }
+    .preview_txt4 {
+        position: absolute;
+        width: 169.72px;
+        height: 50px;
+        z-index: 1;
+        padding-top: 33px;
+        padding-left: 287.86px;
     }
     .item_img1 {
         width: 232px;
@@ -471,17 +532,49 @@ body {
         width: 375px;
         height: 363px;
         position: relative;
-        align-items: center;
     }
     .item_manBig {
         display: none;
     }
-    .item_brand {
-        position: absolute;
+    .brand_block {
         width: 263px;
         height: 66px;
+        padding-top: 148px;
         padding-left: 56px;
-        padding-top: 0;
+        position: absolute;
+        display: flex;
+        gap: 15px;
+    }
+    .pink_square {
+        padding-top: 5px;
+        width: 12px;
+        height: 61px;
+        background: #F16D7F;
+    }
+    .brand_poster {
+        width: 236px;
+        height: 66px;
+    }
+    .brand_logo {
+        font-family: "Lato", sans-serif;
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 45.6px;
+        text-align: left;
+    }
+    .brand_txt1 {
+        font-family: "Lato", sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+    }
+    .brand_txt2 {
+        font-family: "Lato", sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
     }
     .preview {
         width: 375px;
@@ -491,10 +584,58 @@ body {
         gap: 32px;
         justify-items: center;
     }
+    .preview_txt1 {
+        position: absolute;
+        width: 174px;
+        height: 50px;
+        z-index: 1;
+        padding-top: 98px;
+        padding-left: 84px;
+    }
+    .preview_txt2 {
+        position: absolute;
+        width: 198.58px;
+        height: 50px;
+        z-index: 1;
+        padding-top: 101.75px;
+        padding-left: 72.71px;
+    }
+    .preview_txt3 {
+        position: absolute;
+        width: 162.64px;
+        height: 50px;
+        z-index: 1;
+        padding-top: 105.16px;
+        padding-left: 90.18px;
+    }
+    .preview_txt4 {
+        position: absolute;
+        width: 169.72px;
+        height: 50px;
+        z-index: 1;
+        padding-top: 30px;
+        padding-left: 92px;
+    }
+    .mini_txt {
+        font-family: "Lato", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .max_txt {
+        font-family: "Lato", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+        text-align: center;
+        color: #F16D7F;
+    }
     .cat_proportion {
         width: 343.26px;
         height: 111px;
-        background-image: url(./img/4-ACCESORIES.svg);
+        background-image: url(./img/accesories_fon.svg);
         background-size: cover;
         background-position: center center;
     }
@@ -517,5 +658,48 @@ body {
     .item_img3 {
         width: 359px;
         height: 580.38px;
+    }
+    .item_heading {
+        padding-top: 64px;
+        margin: 0;
+        padding-bottom: 3.3px;
+    }
+    .item_text1 {
+        margin-top: 103.3px;
+        margin-bottom: 64.7px;
+    }
+    .shop_choices {
+        padding-top: 185px;
+    }
+    .item {
+        width: 359px;
+        height: 579.39px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .item_img3 {
+        width: 359px;
+        height: 418.83px;
+    }
+    .title_price {
+        width: 313.87px;
+        height: 116.33px;
+        margin: 0;
+        padding-top: 16.28px;
+        padding-left: 16.41px;
+        display: grid;
+    }
+    .item_heading2 {
+        padding-left: 1.54px;
+    }
+    .item_price {
+        margin-top: 0;
+    }
+    .item_ref {
+        margin-top: 3782px;
+    }
+    .center_for_425 {
+        padding-left: calc(50% - 187.5px);
+        padding-right: calc(50% - 187.5px);
     }
 }
