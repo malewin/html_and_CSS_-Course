@@ -1,0 +1,411 @@
+@-webkit-keyframes wobble-hor-bottom {
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+@keyframes wobble-hor-bottom {
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+*/ * {
+    margin: 0;
+    padding: 0;
+}
+
+.game_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: linear-gradient(cornflowerblue, rgb(189, 187, 187));
+    border-radius: 25px;
+}
+
+.taxi_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    height: 60px;
+    width: 140px;
+}
+
+.taxi_item {
+    width: 140px;
+}
+
+.game_name_heading {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "MORF" 15, "SHLN" 46.3;
+    margin: 0;
+    font-size: 44px;
+}
+
+.question {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "MORF" 15, "SHLN" 46.3;
+    font-size: 24px;
+}
+
+.form_section {
+    display: grid;
+    justify-content: center;
+    background: linear-gradient(5deg, rgb(176, 176, 176), transparent);
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.choice_box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: tranform 0.5s;
+}
+
+.check_box {
+    display: grid;
+    justify-items: center;
+}
+
+.check_box:hover {
+    transform: translateY(-20px) scale(1.2);
+}
+
+.button_choice_position {
+    display: flex;
+    justify-content: center;
+}
+
+.button_choice {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "MORF" 15, "SHLN" 46.3;
+    font-size: 30px;
+    width: 200px;
+    border-radius: 20px;
+    background: #e5e534;
+    margin-bottom: 10px;
+    animation: wobble-hor-bottom 2.5s both;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+}
+
+.button_choice:focus {
+    animation: none;
+    background: greenyellow;
+}
+
+.racing {
+    height: 600px;
+    background-color: burlywood;
+}
+
+.drive {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: grid;
+    gap: 5px;
+    position: relative;
+}
+
+.tap_start_position_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.tap_start {
+    position: absolute;
+    z-index: 2;
+    display: grid;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+    transition: display 1s;
+}
+
+.drive:active .tap_start {
+    display: none;
+    transition-timing-function: linear;
+}
+
+.drive:active .car_item {
+    margin-left: 90vw;
+}
+
+.tap_start_flag {
+    width: 100px;
+}
+
+.tap_start_tap {
+    width: 100px;
+}
+
+.flags {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, white 70%, green 30%);
+}
+
+.finish {
+    margin-right: 50px;
+}
+
+.road {
+    background-color: rgb(199, 199, 199);
+    height: 320px;
+    transform: skew(15deg);
+    margin-left: 30px;
+    border-radius: 18px;
+}
+
+.weed {
+    height: 100px;
+    background-color: green;
+}
+
+
+/* .polosa {
+    background-color: rgba(220, 220, 220, 0.781);
+} */
+
+.cars {
+    z-index: 1;
+    position: absolute;
+}
+
+
+/* .cars:active .car_item {
+    margin-left: 90vw;
+} */
+
+.car {
+    width: 100vw;
+}
+
+.car_item {
+    width: 60px;
+    transition: margin-left 4s;
+}
+
+.car_item_choice {
+    width: 50px;
+}
+
+.car_1 {
+    transition-timing-function: cubic-bezier(0, .51, .52, .99);
+}
+
+.car_2 {
+    transition-timing-function: cubic-bezier(0, .51, 1, .47);
+    margin-left: 20px;
+}
+
+.car_3 {
+    transition-timing-function: cubic-bezier(.49, 0, 1, .47);
+    margin-left: 40px;
+}
+
+.car_4 {
+    transition-timing-function: cubic-bezier(.49, 0, .5, 1);
+    margin-left: 60px;
+}
+
+.car_5 {
+    transition-timing-function: cubic-bezier(.35, .35, .63, .63);
+    margin-left: 80px;
+}
+
+.rewards {
+    display: grid;
+}
+
+.reward {
+    width: 100px;
+    transition: transform 1s;
+}
+
+.result_heading {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.result_text {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "MORF" 15, "SHLN" 46.3;
+    font-size: 50px;
+    margin: 0;
+}
+
+.podium_pos {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.podium {
+    width: 200px;
+}
+
+.win_result {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+}
+
+.loss_result {
+    display: flex;
+    justify-content: center;
+}
+
+.reward_1:hover {
+    transform: translate(130px, -240px) scale(1.5);
+}
+
+.reward_2:hover {
+    transform: translateY(-270px) scale(1.5);
+}
+
+.reward_3:hover {
+    transform: translate(-130px, -230px) scale(1.5);
+}
+
+.reward_4:hover {
+    transform: translateY(-250px) scale(2);
+}
