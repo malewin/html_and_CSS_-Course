@@ -1,3 +1,57 @@
+@-webkit-keyframes vibrate-1 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+
+@keyframes vibrate-1 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+
 @-webkit-keyframes wobble-hor-bottom {
     0%,
     100% {
@@ -260,8 +314,64 @@
     transition-timing-function: linear;
 }
 
-.drive:active .car_item {
-    margin-left: 90vw;
+.tap_gas_position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.tap_gas {
+    position: absolute;
+    z-index: 2;
+    display: grid;
+    animation: vibrate-1 0.3s linear infinite both;
+    transition: display 1s;
+    visibility: hidden;
+}
+
+.drive:active .tap_gas {
+    visibility: visible;
+    transition-timing-function: linear;
+}
+
+.tap_gas_item {
+    width: 100px;
+}
+
+.tap_gas_text {
+    width: 100px;
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "MORF" 15, "SHLN" 46.3;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.drive:active .car_item1 {
+    margin-left: 90%;
+}
+
+.drive:active .car_item2 {
+    margin-left: 91%;
+}
+
+.drive:active .car_item3 {
+    margin-left: 92%;
+}
+
+.drive:active .car_item4 {
+    margin-left: 93%;
+}
+
+.drive:active .car_item5 {
+    margin-left: 94%;
 }
 
 .tap_start_flag {
@@ -282,12 +392,33 @@
     margin-right: 50px;
 }
 
+.road_lines {
+    width: 95%;
+    height: 320px;
+    position: absolute;
+    transform: skew(15deg);
+    display: grid;
+    grid-template-rows: 10px 10px 10px 10px;
+    gap: 55px;
+    z-index: 1;
+    padding-top: 50px;
+    padding-left: 35px;
+}
+
+.road_line {
+    height: 5px;
+    display: flex;
+    background: white;
+    z-index: 2;
+}
+
 .road {
     background-color: rgb(199, 199, 199);
     height: 320px;
     transform: skew(15deg);
     margin-left: 30px;
     border-radius: 18px;
+    width: 95%;
 }
 
 .weed {
@@ -295,26 +426,36 @@
     background-color: green;
 }
 
-
-/* .polosa {
-    background-color: rgba(220, 220, 220, 0.781);
-} */
-
 .cars {
     z-index: 1;
     position: absolute;
 }
 
-
-/* .cars:active .car_item {
-    margin-left: 90vw;
-} */
-
 .car {
     width: 100vw;
 }
 
-.car_item {
+.car_item1 {
+    width: 60px;
+    transition: margin-left 4s;
+}
+
+.car_item2 {
+    width: 60px;
+    transition: margin-left 4s;
+}
+
+.car_item3 {
+    width: 60px;
+    transition: margin-left 4s;
+}
+
+.car_item4 {
+    width: 60px;
+    transition: margin-left 4s;
+}
+
+.car_item5 {
     width: 60px;
     transition: margin-left 4s;
 }
