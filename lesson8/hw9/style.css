@@ -33,6 +33,11 @@ p {
     margin: 0;
 }
 
+h5.max_txt {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     min-width: 1600px;
     padding-left: calc(50% - 800px);
